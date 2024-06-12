@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="product-details">
+    <img src="{{ product.imgUrl }}" alt="" class="image" />
+    <div>
+      <p>{{ product.name }}</p>
+      <strong>R${{ product.price }}</strong>
+    </div>
+    <p>{{ product.description }}</p>
+  </div>
+  <button (click)="addToCartWithQuantity(product)">
+    <fa-icon [icon]="bagshopping"></fa-icon>Comprar
+  </button>
+</div>

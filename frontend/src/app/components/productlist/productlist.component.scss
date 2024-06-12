@@ -1,0 +1,36 @@
+.ProductListContainer {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 34px);
+    margin-top: 5rem;
+
+    @media(max-width: 768px) {
+        margin-top: 1rem;
+
+    }
+
+
+}
+
+.ProductListWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.875rem;
+    max-width: 938px;
+    margin: auto;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 1.825rem;
+        margin-top: 1.125rem;
+        align-items: center;
+
+    }
+
+    @media(max-width: 1100px) {
+        padding: 0 1.3rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

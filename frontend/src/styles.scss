@@ -1,0 +1,26 @@
+:root {
+    --primary-color-100: #1178E5;
+    --primary-color-200: #2C71BB;
+    --primary-color-300: #3A6491;
+    --primary-color-400: #3A4F66;
+    --primary-color-500: #2C333C;
+
+    --secondary-color-100: #C1DECE;
+    --secondary-color-200: #89B39C;
+    --secondary-color-300: #52896A;
+    --secondary-color-400: #295E41;
+    --secondary-color-500: #0E341F;
+
+    --tertiary-color: #77654B;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: white;
+}

@@ -1,0 +1,21 @@
+<div *ngIf="isVisible" class="cart-container">
+  <div class="cart-header">
+    <h1>Carrinho</h1>
+    <button (click)="toggleVisibility()">
+      <fa-icon class="close-icon fa-md" [icon]="faX"></fa-icon>
+    </button>
+  </div>
+  <main class="cart-content">
+    <app-cartitem
+      [product]="product"
+      *ngFor="let product of products"
+    ></app-cartitem>
+  </main>
+  <div class="cart-footer">
+    <div class="row">
+      <strong>Total:</strong>
+      <div>R${{ total }}</div>
+    </div>
+    <button>Finalizar Compra</button>
+  </div>
+</div>

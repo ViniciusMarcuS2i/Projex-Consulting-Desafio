@@ -1,0 +1,20 @@
+<div class="container">
+  <button (click)="handleRemoveProductFromCartClick()" class="remove-item">
+    <fa-icon [icon]="faTrash"></fa-icon>
+  </button>
+  <div class="product">
+    <img src="{{ product?.imgUrl }}" alt="" class="product-image" />
+    <div class="product-details">
+      <p class="product-name">{{ product?.name }}</p>
+      <div class="quantity">
+        <p>Qtd:</p>
+        <div>
+          <button (click)="handleDecreaseProductQuantityClick()">-</button>
+          <span>{{ product?.quantity }}</span>
+          <button (click)="handleIncreaseProductQuantityClick()">+</button>
+        </div>
+      </div>
+      <strong class="total-price">R${{ product?.price }}</strong>
+    </div>
+  </div>
+</div>
